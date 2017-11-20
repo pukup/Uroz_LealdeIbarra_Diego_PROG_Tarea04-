@@ -5,6 +5,8 @@
  */
 package arrays;
 
+import utilidades.Entrada;
+
 /**
  *
  * @author pukup
@@ -13,6 +15,14 @@ public class Principal {
     
     public static void main (String[] args){
         
+        int numeroTriangulos;
+        
+        do{
+        System.out.println("Introduzca un número entero positivo");
+        numeroTriangulos = Entrada.entero();
+        }while(numeroTriangulos < 0);
+        
+        Punto[] vectorPuntos = new Punto[numeroTriangulos*3];
         
         
     }
