@@ -13,6 +13,13 @@ public class Triangulo {
 
     private Punto vertice1, vertice2, vertice3;
 
+    public Triangulo() {
+
+        vertice1 = new Punto(0,0);
+        vertice2 = new Punto(0,0);
+        vertice3 = new Punto(0,0);
+    }
+    
     public Triangulo(Punto vertice1, Punto vertice2, Punto vertice3) {
 
         this.vertice1 = vertice1;
