@@ -38,4 +38,10 @@ public class Triangulo {
         return toString;
     }
     
+    public double perimetro(Triangulo triangulo){
+        double perimetro;
+        perimetro = (vertice1.distancia(vertice2))+(vertice2.distancia(vertice3))+(vertice1.distancia(vertice3));
+        return perimetro;
+    }
+    
 }
