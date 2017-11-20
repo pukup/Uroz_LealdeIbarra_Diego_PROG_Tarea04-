@@ -12,31 +12,35 @@ import utilidades.Entrada;
  * @author pukup
  */
 public class Principal {
-    
-    public static void main (String[] args){
-        
+
+    public static void main(String[] args) {
+
         int numeroTriangulos;
+
+        do {
+            System.out.println("Introduzca un número entero positivo");
+            numeroTriangulos = Entrada.entero();
+        } while (numeroTriangulos < 0);
+
         
-        do{
-        System.out.println("Introduzca un número entero positivo");
-        numeroTriangulos = Entrada.entero();
-        }while(numeroTriangulos < 0);
-        
-        Punto[] vectorPuntos = new Punto[numeroTriangulos*3];
-        
+        Punto[] vectorPuntos = new Punto[numeroTriangulos * 3];
+
         for (int i = 0; i < vectorPuntos.length; i++) {
-            
-            vectorPuntos[i] = new Punto((double)(Math.random()*10),(double)(Math.random()*10));
-        }
-        
-        Triangulo[] vectorTriangulos = new Triangulo[numeroTriangulos];
-        
-        for (int i = 0; i < numeroTriangulos; i+=3) {
-            vectorTriangulos[i] = new Triangulo (vectorPuntos[i],vectorPuntos[i+1],vectorPuntos[i+2]);
+            vectorPuntos[i] = new Punto((double) (Math.random() * 10), (double) (Math.random() * 10));
         }
 
-            
+        
+        
+        Triangulo[] vectorTriangulos = new Triangulo[numeroTriangulos];
+        int sumadorPuntos = 0;
+
+        for (int i = 0; i < vectorTriangulos.length; i++) {
+            vectorTriangulos[i] = new Triangulo(vectorPuntos[sumadorPuntos], vectorPuntos[sumadorPuntos + 1], vectorPuntos[sumadorPuntos + 2]);
+            sumadorPuntos += 3;
+        }
+
+        
         
     }
-    
+
 }
