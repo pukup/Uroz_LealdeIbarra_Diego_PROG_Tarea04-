@@ -45,7 +45,28 @@ public class Principal {
             sumaPerimetros = sumaPerimetros + vectorTriangulos[i].perimetro();
         }
 
-        
+        mediaPerimetros = sumaPerimetros / numeroTriangulos;
+
+        for (int i = 0; i < numeroTriangulos; i++) {
+
+            if (vectorTriangulos[i].perimetro() > mediaPerimetros) {
+                mayorMedia++;
+            }
+            if (vectorTriangulos[i].perimetro() < mediaPerimetros) {
+                menorMedia++;
+            }
+            if (vectorTriangulos[i].perimetro() > mayorPerimetro) {
+                trianguloMayor = vectorTriangulos[i];
+            }  
+            if (vectorTriangulos[i].perimetro() > menorPerimetro) {
+                trianguloMenor = vectorTriangulos[i];
+            }
+
+        }
+
+        System.out.println("La media es: " + mediaPerimetros);
+        System.out.println("Hay " + mayorMedia + " triangulos con un perímetro superior a la media, y " + menorMedia + " con un perímetro inferior");
+        System.out.println("El triangulo mayor está formado por los vértices: " + trianguloMayor.toString() + " y el menor: " + trianguloMenor.toString());
 
     }
 
