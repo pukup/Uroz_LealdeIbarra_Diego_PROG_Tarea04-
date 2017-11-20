@@ -10,15 +10,28 @@ package arrays;
  * @author pukup
  */
 public class Triangulo {
-    
-    
+
     private Punto vertice1, vertice2, vertice3;
-    
-    public Triangulo (Punto vertice1, Punto vertice2, Punto vertice3){
-        
+
+    public Triangulo(Punto vertice1, Punto vertice2, Punto vertice3) {
+
         this.vertice1 = vertice1;
         this.vertice2 = vertice2;
-        this.vertice3= vertice3;
+        this.vertice3 = vertice3;
     }
+
+    public Punto getVertice1() {
+        return vertice1;
+    }
+
+    public Punto getVertice2() {
+        return vertice2;
+    }
+
+    public Punto getVertice3() {
+        return vertice3;
+    }
+    
+    
     
 }
