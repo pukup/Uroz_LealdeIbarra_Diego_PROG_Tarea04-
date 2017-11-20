@@ -32,6 +32,10 @@ public class Triangulo {
         return vertice3;
     }
     
-    
+    public String toString(){
+        String toString;
+        toString = "A" + vertice1.toString() + "B" + vertice2.toString() + "C" + vertice3.toString();
+        return toString;
+    }
     
 }
