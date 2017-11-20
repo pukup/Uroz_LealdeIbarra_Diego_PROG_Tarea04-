@@ -35,4 +35,13 @@ public class Punto {
     }
     
     
+    public double distancia(Punto a, Punto b){
+        
+        double distancia;
+        
+        distancia = Math.sqrt(Math.pow((b.x-a.x), 2)+(Math.pow((b.y-a.y), 2)));
+        return distancia;
+        
+    }
+    
 }
