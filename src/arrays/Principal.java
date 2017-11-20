@@ -3,18 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package uroz_lealdeibarra_diego_prog_tarea04;
+package arrays;
 
 /**
  *
  * @author pukup
  */
-public class Uroz_LealdeIbarra_Diego_PROG_Tarea04 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+public class Principal {
+    
+    public static void main (String[] args){
+        
+        
         
     }
     
